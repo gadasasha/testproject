@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TESTDBModelContainer" CdmEntityContainer="TESTDBEntities">
+    <EntitySetMapping Name="tb_services_balances">
+      <EntityTypeMapping TypeName="TESTDBModel.tb_services_balances">
+        <MappingFragment StoreEntitySet="tb_services_balances">
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="date_post" ColumnName="date_post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_services_balances_sums">
+      <EntityTypeMapping TypeName="TESTDBModel.tb_services_balances_sums">
+        <MappingFragment StoreEntitySet="tb_services_balances_sums">
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="sum" ColumnName="sum" />
+          <ScalarProperty Name="date_post" ColumnName="date_post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

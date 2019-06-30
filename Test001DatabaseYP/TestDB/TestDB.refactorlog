@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="c76112bd-5241-4e44-99c4-257bb2d302d7" ChangeDateTime="06/23/2019 10:42:09">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances_sums].[service_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances_sums]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4c684984-fc4c-4ee9-b771-c223a71d5f43" ChangeDateTime="06/23/2019 10:42:17">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances_sums].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances_sums]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="service_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c555a168-fd65-486d-b7d9-cebb72f67c6e" ChangeDateTime="06/23/2019 10:42:25">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances_sums].[1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances_sums]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="sum" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5b07f8e9-5bad-4dba-afd7-7a87b89daa72" ChangeDateTime="06/23/2019 10:45:51">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="service_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bbcbc7ab-19fd-47ca-9f06-51897fb62bcf" ChangeDateTime="06/23/2019 11:43:00">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="servive_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cbf8b323-ea15-43da-a14a-55f1e62d9266" ChangeDateTime="06/23/2019 11:44:15">
+    <Property Name="ElementName" Value="[dbo].[tb_services_balances].[servive_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tb_services_balances]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="service_id" />
+  </Operation>
+</Operations>

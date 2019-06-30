@@ -1,0 +1,9 @@
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\bin\Debug\DataLibrary.dll
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\bin\Debug\DataLibrary.pdb
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\bin\Debug\Dapper.dll
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\bin\Debug\Dapper.xml
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\obj\Debug\DataLibrary.dll
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\DataLibrary\obj\Debug\DataLibrary.pdb

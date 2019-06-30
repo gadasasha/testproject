@@ -1,0 +1,10 @@
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\bin\Debug\TestDB.dacpac
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\bin\Debug\TestDB.dll
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\bin\Debug\TestDB.pdb
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\TestDB.dll
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\TestDB.pdb
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\TestDB.sqlprojAssemblyReference.cache
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\Model.xml
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\refactor.xml
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\postdeploy.sql
+E:\C# cesh\Test1_DB_YP\Test001DatabaseYP\TestDB\obj\Debug\predeploy.sql

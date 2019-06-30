@@ -1,0 +1,85 @@
+﻿@model IEnumerable<DataLibrary.Models.ServicesModel>
+
+
+@{
+    ViewBag.Title = "ViewServices";
+}
+
+<h2>Список сервисов</h2>
+
+
+<p>
+    @Html.ActionLink("Создать сервис", "Create")
+</p>
+
+
+<form action="" method="POST" style="margin: 15px 0;">
+    <label for="dateFrom">Период</label>
+    <input id="dateFrom" type="text" name="dateFrom" placeholder=" @DateTime.Now.ToString("dd/dd/yyyy")" /> -
+    <input id="dateTo" type="text" name="dateTo" placeholder="@DateTime.Now.ToString("dd/mm/yyyy")" />
+    <input id="online" type="checkbox" name="isOnline" />
+    <label for="online">Онлайн</label>
+    <input id="btn" class="btn btn-primary" type="submit" name="dateTo" value="Показать" />
+</form>
+
+<table class="table table-bordered">
+    <tr style="background: lightgrey;">
+        <th>
+            Остаток на дату
+        </th>
+        <th>
+            Наименование
+        </th>
+        <th>
+            Активен
+        </th>
+        <th>
+           Сумма
+        </th>
+        <th>
+            Лимит
+        </th>
+        <th>
+            Изменить лимит
+        </th>
+        <th>
+            Последнее обновление
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @DateTime.Now.ToString("dd/mm/yyyy")
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Active)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Sum)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Limit)
+    </td>
+    <td>
+        @using (Html.BeginForm("UpdaterLimit", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <input type="text" name="limit" id="limit" value="@item.Limit" />
+                <input type="hidden" name="service_id" id="service_id" value="@item.Service_id" />
+                <button class="btn btn-info" type="submit">Сохранить</button>
+            </div>
+        }
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Date_post)
+    </td>
+</tr>
+    }
+
+</table>

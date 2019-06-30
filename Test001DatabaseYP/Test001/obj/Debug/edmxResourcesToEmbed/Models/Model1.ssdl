@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TESTDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_services_balances">
+    <Key>
+      <PropertyRef Name="service_id" />
+    </Key>
+    <Property Name="service_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="active" Type="bit" />
+    <Property Name="date_post" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_services_balances_sums">
+    <Key>
+      <PropertyRef Name="date_post" />
+    </Key>
+    <Property Name="service_id" Type="int" Nullable="false" />
+    <Property Name="sum" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="date_post" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tb_servic__servi__25869641">
+    <End Role="tb_services_balances" Type="Self.tb_services_balances" Multiplicity="1" />
+    <End Role="tb_services_balances_sums" Type="Self.tb_services_balances_sums" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_services_balances">
+        <PropertyRef Name="service_id" />
+      </Principal>
+      <Dependent Role="tb_services_balances_sums">
+        <PropertyRef Name="service_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище TESTDBModelContainer">
+    <EntitySet Name="tb_services_balances" EntityType="Self.tb_services_balances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_services_balances_sums" EntityType="Self.tb_services_balances_sums" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tb_servic__servi__25869641" Association="Self.FK__tb_servic__servi__25869641">
+      <End Role="tb_services_balances" EntitySet="tb_services_balances" />
+      <End Role="tb_services_balances_sums" EntitySet="tb_services_balances_sums" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
